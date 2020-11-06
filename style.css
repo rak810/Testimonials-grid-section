@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+body {
+    background: hsl(0, 0%, 81%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+
+
+
+.container {
+    display: flex;
+    width: 80vw;
+    height: 690px;
+    margin: auto;
+}
+
+.flex-main-1 {
+    flex: 2;
+    
+}
+
+.flex-main-2 {
+    flex: 1;
+    height: 100%;
+}
+
+.flex-1 {
+    display: flex;
+}
+
+.flex-2 {
+    display: flex;
+}
+
+.img-div {
+    display: flex;
+    align-items: center;
+}
+
+
+.card {
+    padding: 1.1rem 2rem;
+    margin: 8px;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+
+.img-div img {
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    border: 4px solid hsl(0, 0%, 100%);
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+}
+
+p {
+    color: white;
+    opacity: 0.7;
+    font-size: 1rem;
+}
+
+
+.txt-div h3 {
+    margin: 1rem 0;
+}
+
+
+#daniel {
+    background: hsl(263, 55%, 52%);
+    flex: 2;
+    z-index: -1;
+}
+
+.svg-div::before {
+    content: "";
+    position: absolute;
+    background: url(images/bg-pattern-quotation.svg) no-repeat center;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+    right: 20%;
+    transform: translate(50%, -50%);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#jean {
+    background: hsl(0, 0%, 100%);
+    flex: 1;
+    
+}
+
+#patrick {
+    background: hsl(219, 29%, 14%);
+    float: 2;
+
+}
+
+#kira {
+    background: hsl(0, 0%, 100%);
+    height: 100%;
+
+}
+
+#jonathan {
+    background: hsl(217, 19%, 35%);
+    flex: 1;
+}
+
+.wht-txt-div h3{
+    color: hsl(217, 19%, 35%);
+}
+
+.wht-txt-div p {
+    color: hsl(217, 19%, 35%);
+}
+
+.txt {
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 768px){
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-1, .flex-2{
+        display: flex;
+        flex-direction: column;
+    }
+}
